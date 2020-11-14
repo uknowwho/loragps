@@ -49,7 +49,7 @@ function Decoder(bytes, port) {
     var lng = float2Coord(bytes2Float32(bytes2Int(bytes.slice(6, 12))));
 
     // Coordinates are generally precise upto 5 decimal places
-    return {"Coordinaten": [parseFloat(lat.toFixed(5)), parseFloat(lng.toFixed(5))]};
+    return {"Coordinates": [parseFloat(lat.toFixed(5)), parseFloat(lng.toFixed(5))]};
   }
 
   return {}
